@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#124191"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".TmoRegister" >
+    
+    <TextView
+        android:id="@+id/contestantId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:includeFontPadding="false"
+        android:text="contestantId"
+        android:textColor="#e6e7e8" />
+
+    <Button
+        android:id="@+id/my_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nokialogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:background="@drawable/startbuttonshape"
+        android:clickable="false"
+        android:padding="10dp"
+        android:text="START"
+        android:textSize="26dp" />
+
+    <TextView
+        android:id="@+id/LocalIp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/nokialogo"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="220dp"
+        android:text="Phone IP: "
+        android:textColor="#e6e7e8"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/Server"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/LocalIp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="22dp"
+        android:text="Server IP:"
+        android:textColor="#e6e7e8"
+        android:textSize="20dp" />
+    
+    <EditText
+        android:id="@+id/ipAddress"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/Server"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/Server"
+        android:background="@drawable/edittextshape"
+        android:includeFontPadding="false"
+        android:inputType="textPostalAddress"
+        android:paddingLeft="3dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/ipPort"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/Server"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/ipAddress"
+        android:background="@drawable/edittextshape"
+        android:includeFontPadding="false"
+        android:inputType="number"
+        android:paddingLeft="3dp"
+        android:text="443"
+        android:textSize="20dp" />
+        
+    <Button
+        android:id="@+id/bt_applysetting"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Server"
+        android:layout_marginTop="80dp"
+        android:layout_toLeftOf="@+id/textHide"
+        android:background="@drawable/buttonshape"
+        android:padding="5dp"
+        android:text="REGISTER"
+        android:textSize="20dp" />
+    
+    <TextView
+        android:id="@+id/textHide"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Server"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/bt_refresh"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Server"
+        android:layout_marginTop="80dp"
+        android:layout_toRightOf="@+id/textHide"
+        android:background="@drawable/buttonshape"
+        android:padding="5dp"
+        android:text="REFRESH"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/nokialogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/nokia_logo_w" />
+
+    <TextView
+        android:id="@+id/orgname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/orgname"
+        android:textColor="#e6e7e8"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/projectname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nokialogo"
+        android:layout_below="@+id/nokialogo"
+        android:layout_marginTop="5dp"
+        android:includeFontPadding="false"
+        android:text="@string/projectname"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+    
+</RelativeLayout>
