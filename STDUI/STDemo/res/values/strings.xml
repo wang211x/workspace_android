@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">顺风生活</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    
+    <!-- 本地setting -->
+    <string name="setting_weather_date">data_wheath_date</string>
+    <string name="setting_weather_info">data_wheath_info</string>
+    <string name="setting_weather_size">data_wheath_size</string>
+    
+    <string name="title_bottom_host">主页</string>
+    <string name="title_bottom_group">营养师</string>
+    <string name="title_bottom_advice">养生圈</string>
+    
+    <string name="content_bottom_advice">工作养生圈</string>
+    
+    <string name="title_fragment_host">首页</string>
+    <string name="title_fragment_family">个人信息</string>
+    <string name="title_fragment_report">健康报告</string>
+    
+    <string name="btn_dev_set">应用管理</string>
+    <string name="btn_about">关于我们</string>
+    
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+
+</resources>
